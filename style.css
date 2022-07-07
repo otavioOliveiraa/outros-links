@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  /* variaveis */
+  --bg-color: #EDF2FF;
+  --text-color: #00082F;
+  --primary-color: #4263EB;
+  --primary-color-dark: #364FC7;
+}
+
+body.dark-blue {
+  --bg-color: #00082F;
+  --text-color: #FFFFFF;
+}
+
+body.pink {
+  --bg-color: #FFF0F6;
+  --text-color: #1F000B;
+  --primary-color: #D6336C;
+  --primary-color-dark: #A61E4D;
+}
+
+body.dark-pink {
+  --bg-color: #1F000B;
+  --text-color: #FFF0F6;
+  --primary-color: #D6336C;
+  --primary-color-dark: #A61E4D;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/* === CONTAINER ====================================== */
+.container {
+  text-align: center;
+
+  margin: 60px auto;
+  width: 300px;
+}
+
+img {
+  width: 100%;
+}
+
+img.avatar {
+  padding: 3.7px;
+  width: 100px;
+
+  border-radius: 50%;
+  border: 4px var(--primary-color) solid;
+}
+
+h1 {
+  font-weight: bold;
+
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.username {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  font-weight: 400;
+
+  opacity: 0.8;
+}
+/* === LISTA ====================================== */
+ul li a {
+  text-decoration: none;
+  height: 53px;
+  margin-bottom: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--primary-color);
+  color: white;
+  border-radius: 6px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+
+  transition: background 400ms;
+}
+
+/* === PSEUDO-CLASS ============================ */
+ul li a:hover {
+ background: var(--primary-color-dark);
+}
+
+ul {
+  margin: 48px 0;
+  list-style: none;
+}
+
+footer {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.6;
+
+  transition: opacity 400ms;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer a {
+  color: var(--text-color);
+}
